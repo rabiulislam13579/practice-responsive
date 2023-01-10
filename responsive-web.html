@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <script src="https://kit.fontawesome.com/2db3861d8a.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .header{
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .products img{
+        width: 65%;
+    
+    }
+    .products{
+        border: 2px solid yellowgreen;
+        border-radius: 5px;
+        background-color:springgreen;
+        padding: 15px;
+    }
+    .btn{
+        color: antiquewhite;
+        background-color: orangered;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* small screen */
+    @media  screen and (max-width: 690px) {
+        .products{
+            background-color: yellow;
+        }
+        .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+    /* medium screen */
+    @media screen and (min-width: 691px) and (max-width:950px) {
+        .products{
+            background-color: purple;
+        }
+        .container{
+            grid-template-columns: repeat(2,1fr);
+        }
+        
+    }
+</style>
+<body>
+    <h1 class="header">Welcome to my Site</h1>
+    <div class="container">
+        <div class="products">
+            <h3>Camera</h3>
+            <img src="images/istockphoto-618066222-612x612.jpg" alt="">
+            <h4>price:100$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>Car</h3>
+            <img src="images/car.jpg" alt="">
+            <h4>price:700$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>Body spray</h3>
+            <img src="images/body-spray.jpg" alt="">
+            <h4>price:20$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>maicro phone</h3>
+            <img src="images/maicrophone.jpg" alt="">
+            <h4>price:60$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptate!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>bike</h3>
+            <img src="images/bike.jpg" alt="">
+            <h4>price:600$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>cycle</h3>
+            <img src="images/cycle.jpg" alt="">
+            <h4>price:500$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quibusdam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>drone</h3>
+            <img src="images/drone.jpg" alt="">
+            <h4>price:300$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>Calculator</h3>
+            <img src="images/calculator.jpg" alt="">
+            <h4>price:30$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nisi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>Watch</h3>
+            <img src="images/watch.jpg" alt="">
+            <h4>price:200$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, aspernatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>earphone</h3>
+            <img src="images/earphone.jpg" alt="">
+            <h4>price:100$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eius?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>laptop</h3>
+            <img src="images/laptop.jpg" alt="">
+            <h4>price:550$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, hic?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="products">
+            <h3>router</h3>
+            <img src="images/router.jpg" alt="">
+            <h4>price:45$</h4>
+            <p><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, voluptatum!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
